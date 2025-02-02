@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Exclusive Section */}
           <div className="space-y-4">
-            <h2 className="text-xl font-bold">Exclusive</h2>
+            <h2 className="text-xl font-bold">Nexabuy</h2>
             <p className="text-sm">Subscribe</p>
             <p className="text-sm">Get 10% off your first order</p>
             <div className="flex">
