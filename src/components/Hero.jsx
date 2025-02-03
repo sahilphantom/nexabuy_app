@@ -5,8 +5,7 @@ import React, { useEffect, useState } from "react"
 import { img3, img4, img5, img6, img7, img8 } from "../assets"
 
 const categories = [
-  "Women's Clothing",
-  "Men's Clothing",
+ 
   "Electronics",
   "Home & Lifestyle",
   "Medicine",

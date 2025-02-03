@@ -113,7 +113,7 @@ const BestSelling = (product) => {
 
         </div>
         </div>
-        <button className="px-10 py-3 text-white rounded-md bg-red-500 hover:bg-red-600 border-0">
+        <button className="px-10 py-3 text-white rounded-md bg-red-500 hover:bg-red-600 border-0 max-sm:p-2">
           View All
         </button>
       </div>
