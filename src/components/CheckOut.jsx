@@ -72,7 +72,7 @@ const CheckOut = () => {
   }
 
   return (
-    <div className="container w-[85%] mx-auto px-4 py-20 max-sm:w-auto m-auto justify-center">
+    <div className="container w-[85%] mx-auto px-4 py-20 max-sm:w-auto max-sm:px-6- justify-center">
       <div className="flex items-center space-x-2 text-sm mb-8">
         <span className="text-gray-500">Home</span>
         <span className="text-gray-500">/</span>
