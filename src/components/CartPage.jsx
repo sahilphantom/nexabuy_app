@@ -15,7 +15,7 @@ const CartPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container w-[85%] justify-center mx-auto px-4 py-20">
       {/* Breadcrumb */}
       <div className="flex items-center space-x-2 text-sm mb-8">
         <span className="text-gray-500">Home</span>
@@ -47,7 +47,7 @@ const CartPage = () => {
 
           <div className="flex flex-col sm:flex-row justify-between mt-6 gap-4">
            
-            <button  className="px-6 py-2 border rounded hover:bg-gray-50 transition-colors">
+            <button  className="px-6 py-2 border rounded cursor-pointer hover:bg-gray-50 transition-colors">
             <Link to='/'>
               Return to Shopping
               </Link>

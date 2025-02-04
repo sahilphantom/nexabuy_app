@@ -226,10 +226,10 @@ const CheckOut = () => {
 
               {/* Payment Icons */}
               <div className="flex items-center space-x-2 mt-4">
-                <img src="/placeholder.svg" alt="Klarna" className="h-6 md:h-8" />
-                <img src="/placeholder.svg" alt="Visa" className="h-6 md:h-8" />
-                <img src="/placeholder.svg" alt="Mastercard" className="h-6 md:h-8" />
-                <img src="/placeholder.svg" alt="GPay" className="h-6 md:h-8" />
+                <img src="https://www.svgrepo.com/show/508697/klarna.svg" alt="Klarna" className="h-6 md:h-8" />
+                <img src="https://www.svgrepo.com/show/362033/visa.svg" alt="Visa" className="h-6 md:h-8" />
+                <img src="https://www.svgrepo.com/show/508701/mastercard-full.svg" alt="Mastercard" className="h-6 md:h-8" />
+                <img src="https://www.svgrepo.com/show/303357/google-pay-primary-logo-logo.svg" alt="GPay" className="h-6 md:h-8" />
               </div>
 
               {/* Coupon Code */}
