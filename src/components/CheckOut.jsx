@@ -88,7 +88,7 @@ const CheckOut = () => {
 
       <div className="grid md:grid-cols-2 gap-4 md:gap-8">
         {/* Billing Details Form */}
-        <div className="order-2 md:order-1">
+        <div className="order-2 md:order-1 max-sm:w-auto">
           <h2 className="text-2xl font-bold mb-6">Billing Details</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
