@@ -164,7 +164,7 @@ const CheckOut = () => {
         </div>
 
         {/* Order Summary */}
-        <div className="order-1 md:order-2">
+        <div className="order-1 px-4 max-sm:w-auto md:order-2">
           <div className="bg-white p-4 sm:p-6 rounded-lg border">
             {/* Cart Items */}
             <div className="space-y-4 mb-6">
