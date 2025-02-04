@@ -170,9 +170,17 @@ export default function Navbar() {
               <button className="hover:text-gray-600">
                 <HeartIcon className="h-6 w-6" />
               </button>
-              <button className="hover:text-gray-600">
-                <ShoppingCartIcon className="h-6 w-6" />
-              </button>
+              <button className="p-2 hover:text-red-500 relative" onClick={() => navigate("/cart")}>
+             
+              <ShoppingCart className="w-6 h-6" />
+              
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
+             
+            </button>
             </div>
           </div>
         </div>
