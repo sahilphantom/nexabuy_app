@@ -72,7 +72,7 @@ const CheckOut = () => {
   }
 
   return (
-    <div className="container w-full max-w-[85%] mx-auto px-2 sm:px-4 py-20">
+    <div className="container w-[85%] mx-auto px-2 sm:px-4 py-20">
       <style>
         {`
           body {
