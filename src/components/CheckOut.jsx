@@ -72,14 +72,21 @@ const CheckOut = () => {
   }
 
   return (
-    <div className="container w-[85%] overflow-x-auto mx-auto px-4 py-20  ">
+    <div className="container w-full max-w-[85%] mx-auto px-2 sm:px-4 py-20">
+      <style>
+        {`
+          body {
+            overflow-x: hidden;
+          }
+        `}
+      </style>
       <div className="flex items-center space-x-2 text-sm mb-8">
         <span className="text-gray-500">Home</span>
         <span className="text-gray-500">/</span>
         <span>Checkout</span>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-8">
         {/* Billing Details Form */}
         <div className="order-2 md:order-1">
           <h2 className="text-2xl font-bold mb-6">Billing Details</h2>
@@ -158,7 +165,7 @@ const CheckOut = () => {
 
         {/* Order Summary */}
         <div className="order-1 md:order-2">
-          <div className="bg-white p-6 rounded-lg border">
+          <div className="bg-white p-4 sm:p-6 rounded-lg border">
             {/* Cart Items */}
             <div className="space-y-4 mb-6">
               {items.map((item) => (
@@ -228,8 +235,16 @@ const CheckOut = () => {
               <div className="flex items-center space-x-2 mt-4">
                 <img src="https://www.svgrepo.com/show/508697/klarna.svg" alt="Klarna" className="h-6 md:h-8" />
                 <img src="https://www.svgrepo.com/show/362033/visa.svg" alt="Visa" className="h-6 md:h-8" />
-                <img src="https://www.svgrepo.com/show/508701/mastercard-full.svg" alt="Mastercard" className="h-6 md:h-8" />
-                <img src="https://www.svgrepo.com/show/303357/google-pay-primary-logo-logo.svg" alt="GPay" className="h-6 md:h-8" />
+                <img
+                  src="https://www.svgrepo.com/show/508701/mastercard-full.svg"
+                  alt="Mastercard"
+                  className="h-6 md:h-8"
+                />
+                <img
+                  src="https://www.svgrepo.com/show/303357/google-pay-primary-logo-logo.svg"
+                  alt="GPay"
+                  className="h-6 md:h-8"
+                />
               </div>
 
               {/* Coupon Code */}
@@ -265,3 +280,4 @@ const CheckOut = () => {
 }
 
 export default CheckOut
+
