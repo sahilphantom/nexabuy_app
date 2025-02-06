@@ -72,7 +72,7 @@ const CheckOut = () => {
   }
 
   return (
-    <div className="container w-[85%] justify-center items-center overflow-x-auto mx-auto px-4 py-20  ">
+    <div className="container w-[85%] justify-center items-center  mx-auto px-4 py-20  ">
       <div className="flex items-center space-x-2 text-sm mb-8">
         <span className="text-gray-500">Home</span>
         <span className="text-gray-500">/</span>
@@ -161,7 +161,7 @@ const CheckOut = () => {
 {
   /* Order Summary */
 }
-<div className="order-1 md:order-2">
+<div className="order-1 px-4 overflow-x-hidden md:order-2 ">
   <div className="bg-white p-4 md:p-6 rounded-lg border">
     {/* Cart Items */}
     <div className="space-y-4 mb-6">
