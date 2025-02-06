@@ -162,7 +162,7 @@ const CheckOut = () => {
   /* Order Summary */
 }
 <div className="order-1 px-4 overflow-x-hidden md:order-2 ">
-  <div className="bg-white p-4 md:p-6 rounded-lg border">
+  <div className="bg-white p-2 md:p-6 rounded-lg border">
     {/* Cart Items */}
     <div className="space-y-4 mb-6">
               {items.map((item) => (
