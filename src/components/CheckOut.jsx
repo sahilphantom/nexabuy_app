@@ -80,87 +80,93 @@ const CheckOut = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8">
-        {/* Billing Details Form */}
-        <div className="order-2 md:order-1">
-          <h2 className="text-2xl font-bold mb-6">Billing Details</h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="block text-sm mb-2">First Name*</label>
-              <input
-                type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleInputChange}
-                required
-                className="w-full p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
+      {
+  /* Billing Details Form */
+}
+;<div className="order-2 md:order-1 px-4 md:px-0">
+  <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Billing Details</h2>
+  <form onSubmit={handleSubmit} className="space-y-4">
+    <div>
+      <label className="block text-sm mb-2">First Name*</label>
+      <input
+        type="text"
+        name="firstName"
+        value={formData.firstName}
+        onChange={handleInputChange}
+        required
+        className="w-full p-2 md:p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500 text-sm md:text-base"
+      />
+    </div>
 
-            <div>
-              <label className="block text-sm mb-2">Company Name</label>
-              <input
-                type="text"
-                name="companyName"
-                value={formData.companyName}
-                onChange={handleInputChange}
-                className="w-full p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
+    <div>
+      <label className="block text-sm mb-2">Company Name</label>
+      <input
+        type="text"
+        name="companyName"
+        value={formData.companyName}
+        onChange={handleInputChange}
+        className="w-full p-2 md:p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500 text-sm md:text-base"
+      />
+    </div>
 
-            <div>
-              <label className="block text-sm mb-2">Street Address*</label>
-              <input
-                type="text"
-                name="streetAddress"
-                value={formData.streetAddress}
-                onChange={handleInputChange}
-                required
-                className="w-full p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
+    <div>
+      <label className="block text-sm mb-2">Street Address*</label>
+      <input
+        type="text"
+        name="streetAddress"
+        value={formData.streetAddress}
+        onChange={handleInputChange}
+        required
+        className="w-full p-2 md:p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500 text-sm md:text-base"
+      />
+    </div>
 
-            <div>
-              <label className="block text-sm mb-2">Apartment, floor, etc. (optional)</label>
-              <input
-                type="text"
-                name="apartment"
-                value={formData.apartment}
-                onChange={handleInputChange}
-                className="w-full p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
+    <div>
+      <label className="block text-sm mb-2">Apartment, floor, etc. (optional)</label>
+      <input
+        type="text"
+        name="apartment"
+        value={formData.apartment}
+        onChange={handleInputChange}
+        className="w-full p-2 md:p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500 text-sm md:text-base"
+      />
+    </div>
 
-            <div>
-              <label className="block text-sm mb-2">Town/City*</label>
-              <input
-                type="text"
-                name="townCity"
-                value={formData.townCity}
-                onChange={handleInputChange}
-                required
-                className="w-full p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
+    <div>
+      <label className="block text-sm mb-2">Town/City*</label>
+      <input
+        type="text"
+        name="townCity"
+        value={formData.townCity}
+        onChange={handleInputChange}
+        required
+        className="w-full p-2 md:p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500 text-sm md:text-base"
+      />
+    </div>
 
-            <div>
-              <label className="block text-sm mb-2">Phone Number*</label>
-              <input
-                type="tel"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleInputChange}
-                required
-                className="w-full p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
-              />
-            </div>
-          </form>
-        </div>
+    <div>
+      <label className="block text-sm mb-2">Phone Number*</label>
+      <input
+        type="tel"
+        name="phoneNumber"
+        value={formData.phoneNumber}
+        onChange={handleInputChange}
+        required
+        className="w-full p-2 md:p-3 bg-gray-50 rounded focus:outline-none focus:ring-2 focus:ring-red-500 text-sm md:text-base"
+      />
+    </div>
+  </form>
+</div>
 
-        {/* Order Summary */}
-        <div className="order-1 md:order-2">
-          <div className="bg-white p-6 rounded-lg border">
-            {/* Cart Items */}
-            <div className="space-y-4 mb-6">
+
+
+{
+  /* Order Summary */
+}
+;<div className="order-1 md:order-2">
+  <div className="bg-white p-4 md:p-6 rounded-lg border">
+    {/* Cart Items */}
+    <div className="space-y-4 mb-6">
               {items.map((item) => (
                 <div key={item.id} className="flex justify-between items-center">
                   <div className="flex items-center space-x-4">
@@ -176,89 +182,97 @@ const CheckOut = () => {
               ))}
             </div>
 
-            {/* Totals */}
-            <div className="border-t pt-4 space-y-3">
-              <div className="flex justify-between text-sm md:text-base">
-                <span>Subtotal:</span>
-                <span>${subtotal}</span>
-              </div>
-              <div className="flex justify-between text-sm md:text-base">
-                <span>Shipping:</span>
-                <span>{shipping}</span>
-              </div>
-              <div className="flex justify-between font-bold text-sm md:text-base">
-                <span>Total:</span>
-                <span>${total}</span>
-              </div>
-            </div>
+    {/* Totals */}
+    <div className="border-t pt-4 space-y-3">
+      <div className="flex justify-between text-xs md:text-sm lg:text-base">
+        <span>Subtotal:</span>
+        <span>${subtotal}</span>
+      </div>
+      <div className="flex justify-between text-xs md:text-sm lg:text-base">
+        <span>Shipping:</span>
+        <span>{shipping}</span>
+      </div>
+      <div className="flex justify-between font-bold text-xs md:text-sm lg:text-base">
+        <span>Total:</span>
+        <span>${total}</span>
+      </div>
+    </div>
 
-            {/* Payment Methods */}
-            <div className="mt-6 space-y-4">
-              <div className="flex items-center space-x-3">
-                <input
-                  type="radio"
-                  id="bank"
-                  name="payment"
-                  value="bank"
-                  checked={paymentMethod === "bank"}
-                  onChange={(e) => setPaymentMethod(e.target.value)}
-                  className="form-radio text-red-500"
-                />
-                <label htmlFor="bank" className="text-sm md:text-base">
-                  Bank
-                </label>
-              </div>
+    {/* Payment Methods */}
+    <div className="mt-6 space-y-4">
+      <div className="flex items-center space-x-3">
+        <input
+          type="radio"
+          id="bank"
+          name="payment"
+          value="bank"
+          checked={paymentMethod === "bank"}
+          onChange={(e) => setPaymentMethod(e.target.value)}
+          className="form-radio text-red-500"
+        />
+        <label htmlFor="bank" className="text-xs md:text-sm lg:text-base">
+          Bank
+        </label>
+      </div>
 
-              <div className="flex items-center space-x-3">
-                <input
-                  type="radio"
-                  id="cash"
-                  name="payment"
-                  value="cash"
-                  checked={paymentMethod === "cash"}
-                  onChange={(e) => setPaymentMethod(e.target.value)}
-                  className="form-radio text-red-500"
-                />
-                <label htmlFor="cash" className="text-sm md:text-base">
-                  Cash on delivery
-                </label>
-              </div>
+      <div className="flex items-center space-x-3">
+        <input
+          type="radio"
+          id="cash"
+          name="payment"
+          value="cash"
+          checked={paymentMethod === "cash"}
+          onChange={(e) => setPaymentMethod(e.target.value)}
+          className="form-radio text-red-500"
+        />
+        <label htmlFor="cash" className="text-xs md:text-sm lg:text-base">
+          Cash on delivery
+        </label>
+      </div>
 
-              {/* Payment Icons */}
-              <div className="flex items-center space-x-2 mt-4">
-                <img src="https://www.svgrepo.com/show/508697/klarna.svg" alt="Klarna" className="h-6 md:h-8" />
-                <img src="https://www.svgrepo.com/show/362033/visa.svg" alt="Visa" className="h-6 md:h-8" />
-                <img src="https://www.svgrepo.com/show/508701/mastercard-full.svg" alt="Mastercard" className="h-6 md:h-8" />
-                <img src="https://www.svgrepo.com/show/303357/google-pay-primary-logo-logo.svg" alt="GPay" className="h-6 md:h-8" />
-              </div>
+      {/* Payment Icons */}
+      <div className="flex items-center space-x-2 mt-4">
+        <img src="https://www.svgrepo.com/show/508697/klarna.svg" alt="Klarna" className="h-4 md:h-6 lg:h-8" />
+        <img src="https://www.svgrepo.com/show/362033/visa.svg" alt="Visa" className="h-4 md:h-6 lg:h-8" />
+        <img
+          src="https://www.svgrepo.com/show/508701/mastercard-full.svg"
+          alt="Mastercard"
+          className="h-4 md:h-6 lg:h-8"
+        />
+        <img
+          src="https://www.svgrepo.com/show/303357/google-pay-primary-logo-logo.svg"
+          alt="GPay"
+          className="h-4 md:h-6 lg:h-8"
+        />
+      </div>
 
-              {/* Coupon Code */}
-              <div className="flex gap-2 mt-4">
-                <input
-                  type="text"
-                  placeholder="Coupon Code"
-                  value={couponCode}
-                  onChange={(e) => setCouponCode(e.target.value)}
-                  className="flex-1 p-2 text-sm md:text-base border rounded focus:outline-none focus:ring-2 focus:ring-red-500"
-                />
-                <button className="px-4 py-2 text-sm md:text-base bg-red-500 text-white rounded hover:bg-red-600">
-                  Apply Coupon
-                </button>
-              </div>
+      {/* Coupon Code */}
+      <div className="flex gap-2 mt-4">
+        <input
+          type="text"
+          placeholder="Coupon Code"
+          value={couponCode}
+          onChange={(e) => setCouponCode(e.target.value)}
+          className="flex-1 p-2 text-xs md:text-sm lg:text-base border rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+        />
+        <button className="px-3 md:px-4 py-2 text-xs md:text-sm lg:text-base bg-red-500 text-white rounded hover:bg-red-600">
+          Apply Coupon
+        </button>
+      </div>
 
-              {/* Place Order Button */}
-              <button
-                onClick={handleSubmit}
-                disabled={isSubmitting}
-                className={`w-full py-3 rounded transition-colors mt-4 text-sm md:text-base ${
-                  isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-red-500 hover:bg-red-600 text-white"
-                }`}
-              >
-                {isSubmitting ? "Placing Order..." : "Place Order"}
-              </button>
-            </div>
-          </div>
-        </div>
+      {/* Place Order Button */}
+      <button
+        onClick={handleSubmit}
+        disabled={isSubmitting}
+        className={`w-full py-2 md:py-3 rounded transition-colors mt-4 text-xs md:text-sm lg:text-base ${
+          isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-red-500 hover:bg-red-600 text-white"
+        }`}
+      >
+        {isSubmitting ? "Placing Order..." : "Place Order"}
+      </button>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   )
