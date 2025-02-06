@@ -79,11 +79,9 @@ const CheckOut = () => {
         <span>Checkout</span>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
-      {
-  /* Billing Details Form */
-}
-;<div className="order-2 md:order-1 px-4 md:px-0">
+      <div className="grid md:grid-cols-2 pt-4 gap-8">
+      {/* Billing Details Form */}
+<div className="order-2 md:order-1 px-4 md:px-0">
   <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Billing Details</h2>
   <form onSubmit={handleSubmit} className="space-y-4">
     <div>
@@ -163,7 +161,7 @@ const CheckOut = () => {
 {
   /* Order Summary */
 }
-;<div className="order-1 md:order-2">
+<div className="order-1 md:order-2">
   <div className="bg-white p-4 md:p-6 rounded-lg border">
     {/* Cart Items */}
     <div className="space-y-4 mb-6">
