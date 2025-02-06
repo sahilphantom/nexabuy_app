@@ -262,7 +262,7 @@ const CheckOut = () => {
       <button
         onClick={handleSubmit}
         disabled={isSubmitting}
-        className={`w-full py-2 md:py-3 rounded transition-colors mt-4 text-xs md:text-sm lg:text-base ${
+        className={`w-full py-2 md:py-3 rounded transition-colors mt-4 text-sm md:text-sm lg:text-base ${
           isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-red-500 hover:bg-red-600 text-white"
         }`}
       >
