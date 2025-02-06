@@ -161,7 +161,7 @@ const CheckOut = () => {
 {
   /* Order Summary */
 }
-<div className="order-1 px-4 overflow-x-hidden md:order-2 ">
+<div className="order-1  overflow-x-hidden md:order-2 ">
   <div className="bg-white p-2 md:p-6 rounded-lg border">
     {/* Cart Items */}
     <div className="space-y-4 mb-6">
@@ -245,7 +245,7 @@ const CheckOut = () => {
       </div>
 
       {/* Coupon Code */}
-      <div className="flex gap-2 mt-4">
+      <div className="flex flex-nowrap gap-2 mt-4">
         <input
           type="text"
           placeholder="Coupon Code"
