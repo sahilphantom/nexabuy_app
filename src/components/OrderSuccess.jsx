@@ -18,12 +18,7 @@ const OrderSuccess = () => {
           >
             Continue Shopping
           </button>
-          <button
-            onClick={() => navigate("/orders")}
-            className="w-full border border-gray-300 py-2 rounded hover:bg-gray-50 transition-colors"
-          >
-            View Orders
-          </button>
+         
         </div>
       </div>
     </div>
