@@ -5,23 +5,22 @@ const useCartStore = create(
   persist(
     (set, get) => ({
       items: [],
+  error: null,
 
-      addToCart: (product) =>
-        set((state) => {
-          const existingItem = state.items.find((item) => item.id === product.id)
+  addToCart: (product) => {
+    const { items } = get()
+    const existingItem = items.find((item) => item.id === product.id)
 
-          if (existingItem) {
-            return {
-              items: state.items.map((item) =>
-                item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item,
-              ),
-            }
-          }
+    if (existingItem) {
+      set({ error: "This item is already in your cart!" })
+      return
+    }
 
-          return {
-            items: [...state.items, { ...product, quantity: 1 }],
-          }
-        }),
+    set((state) => ({
+      items: [...state.items, { ...product, quantity: 1 }],
+      error: null,
+    }))
+  },
 
       removeFromCart: (productId) =>
         set((state) => ({

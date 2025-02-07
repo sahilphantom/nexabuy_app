@@ -12,6 +12,14 @@ const ProductCard = ({ product }) => {
   }
 
   const handleAddToCart = () => {
+    const existingItems = useCartStore.getState().items
+    const existingItem = existingItems.find((item) => item.id === product.id)
+
+    if (existingItem) {
+      message.error("This item is already in your cart!")
+      return
+    }
+   
     addToCart({
       id: product.id,
       title: product.title,
@@ -19,6 +27,7 @@ const ProductCard = ({ product }) => {
       image: product.thumbnail,
     })
     message.success("Added to cart!")
+  
   }
 
   return (
@@ -64,10 +73,10 @@ const ProductCard = ({ product }) => {
   )
 }
 
-const BestSelling = (product) => {
+const BestSelling = () => {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
-  const addToCart = useCartStore((state) => state.addToCart)
+  // const addToCart = useCartStore((state) => state.addToCart)
 
   useEffect(() => {
     const fetchProducts = async () => {

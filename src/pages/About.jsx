@@ -12,7 +12,7 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.5 }}
-      className="max-w-7xl mx-auto px-4 py-8"
+      className="w-[95%] mx-auto px-4 py-8"
     >
     <OurStory />
     <Stats />

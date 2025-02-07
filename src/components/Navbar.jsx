@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className="w-full bg-black text-white text-sm py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <p className="text-center flex-1 text-xs sm:text-sm">
-            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%
+          50% OFF Flash Sale! Don't Miss Out
             <a href="#" className="ml-2 font-semibold">
               ShopNow
             </a>
@@ -94,18 +94,18 @@ export default function Navbar() {
                 <input
                   type="text"
                   placeholder="What are you looking for?"
-                  className={`w-48 py-1 px-3 text-sm border rounded-sm transition-all ${
+                  className={`w-50 py-1 px-3 text-sm border rounded-sm transition-all ${
                     isSearchFocused ? "w-64" : "w-48"
                   }`}
                   onFocus={() => setIsSearchFocused(true)}
                   onBlur={() => setIsSearchFocused(false)}
                 />
-                <MagnifyingGlassIcon className="h-4 w-4 absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <MagnifyingGlassIcon className="h-4 w-4 absolute  right-1 top-1/2 transform -translate-y-1/2 text-gray-600" />
               </div>
 
               {/* Icons */}
               <div className="flex items-center space-x-4">
-                <Link to="/wishlist" className="text-gray-700 hover:text-gray-900">
+                <Link  className="text-gray-700 hover:text-gray-900">
                   <Badge count={0} size="small">
                     <HeartOutlined style={{ fontSize: "24px" }} />
                   </Badge>
