@@ -6,7 +6,7 @@ const GridItem = ({ title, description, image, large = false }) => (
     <div className={`relative bg-black group overflow-hidden `}>
       <div className="absolute  inset-0  group-hover:bg-black/50 transition-colors duration-300"></div>
       <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-fill " />
-      <div className="absolute bottom-[-0.5rem] left-0 p-6 text-white">
+      <div className="absolute bottom-[-0.7rem] left-0 p-6 text-white">
         <h3 className="text-2xl font-bold mb-2">{title}</h3>
         <p className="text-sm text-gray-200 mb-4">{description}</p>
         <button className="text-white text-sm hover:underline">Shop Now</button>
