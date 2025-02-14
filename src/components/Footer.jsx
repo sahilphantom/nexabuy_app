@@ -1,6 +1,6 @@
 import React from "react"
 import { ChevronRightIcon } from "@heroicons/react/24/outline"
-import { img1, img2 } from "../assets";
+import { img1, img18, img2 } from "../assets";
 import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
@@ -101,7 +101,7 @@ const Footer = () => {
             <p className="text-sm text-gray-400">Save $3 with App New User Only</p>
             <div className="relative flex space-x-2">
               <div className="w-20 h-20">
-              <img src='https://www.svgrepo.com/show/76016/qr-code.svg_' alt="QR Code" className="w-full h-full" />
+              <img src={img18} alt="QR Code" className="w-full h-full" />
               </div>
               <div className="absolute top-[-1rem] left-[6rem] space-y-0">
                 <a href="#" className="block">
