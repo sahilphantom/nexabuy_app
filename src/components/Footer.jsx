@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm">
               <p>111 Bijoy sarani, Dhaka,</p>
               <p>DH 1515, Bangladesh.</p>
-              <p>exclusive@gmail.com</p>
+              <p>nexabuy@gmail.com</p>
               <p>+88015-88888-9999</p>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Footer = () => {
             <p className="text-sm text-gray-400">Save $3 with App New User Only</p>
             <div className="relative flex space-x-2">
               <div className="w-20 h-20">
-              <img src='https://s3-alpha-sig.figma.com/img/9913/87c0/5dd6d44594e01b675513068803e2426d?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Mg-kX2VhfHTjqUcnPw9Ox~mCdRV~qSei2RosseN6gMT3mErfIlRwMWoJojgsk-Qy5Al7t9YxSM8UsjwyHNM8PqALUJwLuqeDk62UQ26mR1RgXMputWFCnx1ScMotOvYdt5Trx5tmK2TBCDGP7DY4MBCOeQYSZOx3Fbxlq2oc8pLnMZidkGVo-0Tqj4fU-M3sOSr7MJ6oua0mDJ5Z4tqbxvx8Pzzb7QahoYuTcv8gC2bLXtcIJnPN3JSzwI-dr4X3d6WI6-M57t2ypT~1eWSCw1TYHHQiAfF63nWA8PPFaOqhejin9tGAFkcNa29OZYU3Yx33PBqvaGuMYEDTwaranQ__' alt="QR Code" className="w-full h-full" />
+              <img src='https://www.svgrepo.com/show/76016/qr-code.svg_' alt="QR Code" className="w-full h-full" />
               </div>
               <div className="absolute top-[-1rem] left-[6rem] space-y-0">
                 <a href="#" className="block">
